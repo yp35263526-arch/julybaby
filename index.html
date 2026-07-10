@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 18th Birthday, Riya! 💛 My Shona 🌸</title>
+  
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght=400;600;700;900&family=Dancing+Script:wght=500;700&family=Great+Vibes&family=Poppins:wght=300;400;500;600;700&family=Space+Grotesk:wght=400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom Styling for specialized premium 2025 modern animations -->
+  <style>
+    * {
+      box-sizing: border-box;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      background-color: #050107;
+      color: #f8fafc;
+    }
+    
+    .font-cursive {
+      font-family: 'Great Vibes', cursive;
+    }
+    
+    .font-handwritten {
+      font-family: 'Dancing Script', cursive;
+    }
+    
+    .font-luxury {
+      font-family: 'Cinzel', serif;
+    }
+    
+    .font-tech {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    /* Elegant glassmorphic cards with ultra blur */
+    .glass-card {
+      background: rgba(18, 10, 24, 0.55);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border: 1px solid rgba(244, 63, 94, 0.2);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 
+                  inset 0 1px 0 rgba(255, 255, 255, 0.1),
+                  0 0 40px rgba(244, 63, 94, 0.08);
+    }
+    
+    .glass-card-gold {
+      background: rgba(22, 16, 8, 0.7);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 
+                  inset 0 1px 0 rgba(255, 255, 255, 0.1),
+                  0 0 50px rgba(245, 158, 11, 0.12);
+    }
+
+    /* Ambient slow glow animations */
+    @keyframes slowPulse {
+      0%, 100% { opacity: 0.25; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.15); }
+    }
+    
+    .ambient-glow-1 {
+      background: radial-gradient(circle, rgba(244,63,94,0.2) 0%, rgba(244,63,94,0) 70%);
+      animation: slowPulse 8s infinite ease-in-out;
+    }
+
+    .ambient-glow-2 {
+      background: radial-gradient(circle, rgba(245,158,11,0.18) 0%, rgba(245,158,11,0) 70%);
+      animation: slowPulse 12s infinite ease-in-out;
+      animation-delay: 2s;
+    }
+
+    /* Stage transitions and layout alignment */
+    .stage-container {
+      transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .stage-hidden {
+      opacity: 0;
+      transform: scale(0.95) translateY(20px);
+      pointer-events: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: none !important;
+    }
+    
+    .stage-active {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+      pointer-events: auto;
+      z-index: 10;
+      display: flex !important;
+    }
+
+    /* Sways for bottom starlit garden */
+    @keyframes sway {
+      0%, 100% { transform: rotate(-4deg); }
+      50% { transform: rotate(4deg); }
+    }
+    .sway-slow {
+      animation: sway 6s ease-in-out infinite;
+    }
+
+    /* Floating effect for luxury buttons and hearts */
+    @keyframes floatUp {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(2deg); }
+    }
+    .float-item {
+      animation: floatUp 5s ease-in-out infinite;
+    }
+
+    /* Letter reveal animations */
+    @keyframes letterReveal {
+      0% { opacity: 0; transform: scale(0.3) translateY(30px); filter: blur(10px); }
+      50% { opacity: 0.8; filter: blur(2px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); filter: blur(0); }
+    }
+    .letter-sparkle {
+      display: inline-block;
+      animation: letterReveal 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      opacity: 0;
+    }
+
+    /* Luxury Golden Sweep */
+    @keyframes shineSweep {
+      0% { left: -100%; }
+      50%, 100% { left: 150%; }
+    }
+    .shine-sweep-container {
+      position: relative;
+      overflow: hidden;
+    }
+    .shine-sweep {
+      position: absolute;
+      top: 0;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+      transform: skewX(-25deg);
+      animation: shineSweep 4s infinite ease-in-out;
+    }
+
+    /* Dynamic Heartbeat beat pulse effect */
+    @keyframes heartbeatPulse {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 15px rgba(244,63,94,0.6)); }
+      25% { transform: scale(1.15); filter: drop-shadow(0 0 35px rgba(244,63,94,1)); }
+      40% { transform: scale(1.03); filter: drop-shadow(0 0 20px rgba(244,63,94,0.7)); }
+      60% { transform: scale(1.18); filter: drop-shadow(0 0 40px rgba(244,63,94,1.1)); }
+    }
+    .heart-beating {
+      animation: heartbeatPulse 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    /* Candle flicker effects */
+    @keyframes flameFlicker {
+      0%, 100% { transform: scale(1) rotate(-1.5deg); }
+      30% { transform: scale(1.2) rotate(3deg) skewX(3deg); }
+      60% { transform: scale(0.85) rotate(-3deg); }
+      80% { transform: scale(1.1) rotate(1.5deg) skewX(-1.5deg); }
+    }
+    .flame-flickering {
+      animation: flameFlicker 0.6s infinite ease-in-out;
+      transform-origin: center bottom;
+    }
+
+    /* Scrolling love letter paper roll simulation */
+    .scrollbar-hidden::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hidden {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Interactive kiss pop animations */
+    @keyframes popKiss {
+      0% { transform: scale(0) translate(0, 0) rotate(0deg); opacity: 0; }
+      15% { opacity: 1; transform: scale(1.5) translate(0, -15px) rotate(15deg); }
+      100% { transform: scale(0.7) translate(var(--x, 50px), var(--y, -250px)) rotate(var(--r, 45deg)); opacity: 0; }
+    }
+    .kiss-floater {
+      position: absolute;
+      animation: popKiss 2.5s cubic-bezier(0.1, 0.8, 0.3, 1) forwards;
+      pointer-events: none;
+      z-index: 90;
+    }
+  </style>
+</head>
+<body class="w-screen h-screen flex flex-col justify-between relative overflow-hidden select-none bg-[#050107] text-[#f8fafc]">
+
+  <!-- ================= CANVAS BACKGROUND PARTICLE ENGINE ================= -->
+  <canvas id="canvas-particles" class="absolute inset-0 z-0 pointer-events-none"></canvas>
+
+  <!-- Ambient Light Globs (2025 Cinematic Glow) -->
+  <div class="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full ambient-glow-1 z-0 pointer-events-none"></div>
+  <div class="absolute -bottom-40 -right-40 w-[600px] h-[600px] rounded-full ambient-glow-2 z-0 pointer-events-none"></div>
+  <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-tr from-[rgba(244,63,94,0.05)] to-[rgba(245,158,11,0.05)] blur-3xl z-0 pointer-events-none"></div>
+
+  <!-- ================= HIGH-END AUDIO CONTROLLER ================= -->
+  <div class="fixed top-6 right-6 z-50 flex items-center gap-3">
+    <div id="music-equalizer" class="hidden sm:flex items-end gap-1 h-5 px-3 py-2 bg-rose-500/10 border border-rose-500/20 backdrop-blur-md rounded-full select-none">
+      <div class="w-[3px] bg-rose-400 h-2 animate-[pulse_0.8s_infinite_alternate]"></div>
+      <div class="w-[3px] bg-rose-500 h-4 animate-[pulse_0.6s_infinite_alternate_delay-100]"></div>
+      <div class="w-[3px] bg-rose-400 h-3 animate-[pulse_0.7s_infinite_alternate_delay-200]"></div>
+      <div class="w-[3px] bg-rose-500 h-1 animate-[pulse_0.5s_infinite_alternate_delay-300]"></div>
+      <span class="text-[10px] font-tech text-rose-300 uppercase tracking-widest pl-1.5 font-semibold">Romantic Symphony</span>
+    </div>
+    <button id="music-toggle" class="p-3.5 rounded-full cursor-pointer flex items-center justify-center bg-rose-500/10 hover:bg-rose-500/25 border border-rose-500/20 shadow-lg shadow-rose-950/20 transition-all duration-300 active:scale-90 relative group animate-pulse" title="Click to enjoy background music">
+      <span id="music-icon" class="text-xl">🎵</span>
+      <span class="absolute right-14 top-1/2 -translate-y-1/2 bg-rose-950/90 border border-rose-500/30 text-[10px] font-tech uppercase tracking-widest text-rose-200 px-3 py-1.5 rounded-md pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">Play Romantic Melody</span>
+    </button>
+  </div>
+
+  <!-- ================= MAIN STAGES CONTAINER ================= -->
+  <div class="flex-1 w-full h-full flex flex-col items-center justify-center px-4 py-16 relative z-10">
+
+    <!-- STAGE 0: The Invitation / Key to My Heart -->
+    <div id="stage-0" class="stage-container stage-active w-full max-w-lg text-center flex flex-col items-center justify-center">
+      <div class="p-8 sm:p-12 rounded-3xl glass-card flex flex-col items-center w-full max-w-md float-item relative">
+        <div class="absolute -top-12 p-5 rounded-full bg-rose-500/10 border border-rose-500/30 flex items-center justify-center shadow-lg shadow-rose-950/40">
+          <span class="text-5xl animate-[pulse_1.5s_infinite_ease-in-out]">🔑</span>
+        </div>
+        
+        <h1 class="text-3xl sm:text-4xl font-luxury font-bold text-transparent bg-clip-text bg-gradient-to-b from-rose-200 via-rose-300 to-rose-400 tracking-wider mt-6 mb-2">
+          FOR MY SHONA
+        </h1>
+        <h2 class="text-4xl sm:text-5xl font-cursive font-bold text-amber-300 leading-tight mb-4 drop-shadow-md">
+          Beautiful Riya 💛
+        </h2>
+        
+        <p class="text-rose-200/70 text-sm leading-relaxed mt-2 font-light max-w-xs font-handwritten text-2xl">
+          "A door built from memories, dreams, and pure stardust, waiting just for your soft touch..."
+        </p>
+
+        <!-- Premium Button with Shine -->
+        <button id="open-surprise-btn" class="mt-10 w-full px-8 py-4.5 rounded-full bg-gradient-to-r from-rose-500 via-pink-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white font-bold tracking-widest text-xs uppercase shadow-[0_10px_35px_rgba(244,63,94,0.35)] border border-rose-400/40 transition-all duration-300 active:scale-95 cursor-pointer shine-sweep-container flex items-center justify-center gap-2">
+          Unlock My Heart ✨
+          <div class="shine-sweep"></div>
+        </button>
+      </div>
+    </div>
+
+
+    <!-- STAGE 1: Romantic Starlit Garden & Bento Gallery -->
+    <div id="stage-1" class="stage-container stage-hidden w-full max-w-4xl text-center flex flex-col items-center justify-center">
+      <div class="mb-4">
+        <span class="text-[10px] font-tech text-rose-400 uppercase tracking-[0.3em] bg-rose-500/10 px-4 py-1.5 rounded-full border border-rose-500/20">The Canvas of Us</span>
+      </div>
+      <h2 class="text-2xl sm:text-4xl font-handwritten font-bold text-amber-200 mb-8 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
+        "In all of nature's endless beauty, your sweet smile shines brightest..." 💛
+      </h2>
+
+      <!-- Bento-style Premium Image Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto px-2 mb-10 w-full" id="gallery-grid">
+        <!-- Dynamic loading of beautiful garden/romantic images -->
+      </div>
+
+      <div class="h-20 flex items-center justify-center">
+        <button id="gallery-continue-btn" class="px-12 py-4.5 rounded-full bg-gradient-to-r from-rose-500 via-pink-500 to-rose-600 hover:from-rose-600 hover:to-rose-700 text-white font-bold tracking-widest text-xs uppercase shadow-[0_8px_30px_rgba(244,63,94,0.3)] border border-rose-400/30 transition-all duration-300 cursor-pointer opacity-0 pointer-events-none float-item shine-sweep-container flex items-center gap-2">
+          Step Closer 💛
+          <div class="shine-sweep"></div>
+        </button>
+      </div>
+    </div>
+
+
+    <!-- STAGE 2: Deep Crimson Heartbeat & Reveal -->
+    <div id="stage-2" class="stage-container stage-hidden w-full max-w-2xl text-center flex flex-col items-center justify-center">
+      <div class="p-10 rounded-3xl glass-card flex flex-col items-center w-full max-w-lg relative overflow-hidden">
+        
+        <!-- Interactive Big Pulsing 3D Heart -->
+        <div id="pulsing-heart-touch" class="w-40 h-40 flex items-center justify-center cursor-pointer relative group transition-transform duration-300 hover:scale-105 mb-8">
+          <div class="absolute inset-0 rounded-full bg-rose-500/10 group-hover:bg-rose-500/25 blur-xl transition-colors duration-300"></div>
+          <span class="text-8xl heart-beating select-none drop-shadow-[0_0_15px_rgba(244,63,94,0.8)]">❤️</span>
+        </div>
+
+        <p id="pulse-instruction" class="text-rose-200/60 font-handwritten text-2xl mb-6">
+          "Tap my heartbeat to unlock your surprise..."
+        </p>
+        
+        <div class="h-24 flex items-center justify-center w-full">
+          <h1 id="reveal-birthday-text" class="text-4xl sm:text-5xl font-luxury font-bold text-transparent bg-clip-text bg-gradient-to-b from-amber-200 via-amber-300 to-amber-500 drop-shadow-[0_4px_12px_rgba(245,158,11,0.25)] leading-normal tracking-wide">
+            <!-- Letters revealed via script -->
+          </h1>
+        </div>
+        
+        <div class="w-24 h-[1px] bg-gradient-to-r from-transparent via-rose-500 to-transparent mt-4 shadow-[0_0_10px_rgba(244,63,94,0.5)]"></div>
+      </div>
+    </div>
+
+
+    <!-- STAGE 3: "Mera Bachha Bada Ho Gaya" Warm Cute Interlude -->
+    <div id="stage-3" class="stage-container stage-hidden w-full max-w-md text-center flex flex-col items-center justify-center">
+      <div class="p-10 rounded-3xl glass-card-gold border border-amber-400/20 shadow-2xl flex flex-col items-center w-full">
+        <div class="p-5 rounded-full bg-amber-400/10 border border-amber-400/30 mb-6 float-item">
+          <span class="text-5xl">🥺💛</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-handwritten font-bold text-amber-200 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] leading-normal text-center">
+          Mera Bachha Bada Ho Gaya! 😭💛
+        </h2>
+        <p class="text-rose-200/70 text-sm mt-3 font-tech uppercase tracking-widest text-center">
+          Look who is turning 18...
+        </p>
+        <div class="flex gap-2 mt-6">
+          <span class="text-xl animate-bounce">🎈</span>
+          <span class="text-xl animate-bounce" style="animation-delay: 0.2s">✨</span>
+          <span class="text-xl animate-bounce" style="animation-delay: 0.4s">🎁</span>
+        </div>
+        <button id="bachha-continue-btn" class="mt-8 px-8 py-3.5 rounded-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold tracking-wider text-xs uppercase transition-all duration-300 active:scale-95 cursor-pointer">
+          Next surprise! 🥰
+        </button>
+      </div>
+    </div>
+
+
+    <!-- STAGE 4: Immersive Heart-to-Heart Scripted Dialogue Sequence -->
+    <div id="stage-4" class="stage-container stage-hidden w-full max-w-lg text-center flex flex-col items-center justify-center">
+      <div class="p-8 sm:p-12 rounded-3xl glass-card border border-rose-500/25 min-h-[220px] flex flex-col items-center justify-center w-full relative">
+        <div class="absolute top-4 left-6 flex gap-1.5 opacity-40">
+          <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+        </div>
+        
+        <p id="dialogue-display-text" class="text-2xl sm:text-3xl font-cursive font-bold text-amber-200 leading-relaxed drop-shadow-sm transition-all duration-500 text-center">
+          Areee aap toh 18 yrs ke ho gaye 🤭
+        </p>
+        
+        <div class="w-full flex justify-between items-center mt-8 px-4">
+          <button id="dialogue-prev-btn" class="px-5 py-2.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/15 text-xs text-rose-300 transition-all duration-300 active:scale-95 disabled:opacity-20 cursor-pointer">
+            ← Back
+          </button>
+          <button id="dialogue-next-btn" class="px-6 py-2.5 rounded-full bg-rose-500/20 border border-rose-500/40 hover:bg-rose-500/40 text-xs text-white font-bold tracking-widest uppercase transition-all duration-300 active:scale-95 cursor-pointer">
+            Next →
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- STAGE 5: Interactive 18 Candles Cake Ceremony -->
+    <div id="stage-5" class="stage-container stage-hidden w-full max-w-lg text-center flex flex-col items-center justify-center">
+      <div class="mb-4">
+        <span class="text-[10px] font-tech text-rose-400 uppercase tracking-[0.3em] bg-rose-500/10 px-4 py-1.5 rounded-full border border-rose-500/20">The Magic Ceremony</span>
+      </div>
+      <h2 id="cake-instruction-banner" class="text-2xl sm:text-3xl font-handwritten font-bold text-amber-200 mb-6 drop-shadow-sm leading-relaxed text-center">
+        Wait... Here comes the cake! 🎂
+      </h2>
+
+      <!-- Premium Detailed Vector Cake Area -->
+      <div id="cake-graphic-wrapper" class="relative w-80 h-80 flex flex-col items-center justify-end pb-8 cursor-crosshair">
+        
+        <!-- 18 Candles Container -->
+        <div class="absolute bottom-[104px] w-64 h-24 flex flex-wrap justify-center gap-2 px-4 z-20" id="candles-container">
+          <!-- Dynamically populated candles -->
+        </div>
+
+        <!-- Upper Cake Tier -->
+        <div class="w-56 h-16 bg-gradient-to-r from-rose-900 via-rose-800 to-rose-950 rounded-2xl relative border-b border-rose-500/40 flex justify-between px-4 items-center z-10 shadow-lg">
+          <!-- Glowing decorative frosting drips -->
+          <div class="absolute bg-amber-400/90 w-3 h-5 rounded-b-full left-4 top-[15px] shadow-[0_0_8px_rgba(245,158,11,0.6)]"></div>
+          <div class="absolute bg-rose-400 w-3.5 h-7 rounded-b-full left-12 top-[15px]"></div>
+          <div class="absolute bg-amber-400/90 w-4 h-6 rounded-b-full left-24 top-[15px] shadow-[0_0_8px_rgba(245,158,11,0.6)]"></div>
+          <div class="absolute bg-rose-400 w-3 h-4 rounded-b-full left-36 top-[15px]"></div>
+          <div class="absolute bg-amber-400/90 w-3.5 h-7 rounded-b-full left-44 top-[15px] shadow-[0_0_8px_rgba(245,158,11,0.6)]"></div>
+          
+          <div class="w-3.5 h-3.5 rounded-full bg-rose-500 border border-rose-400 shadow-sm shadow-rose-950"></div>
+          <div class="w-3.5 h-3.5 rounded-full bg-amber-400 border border-amber-300 shadow-sm shadow-amber-950"></div>
+          <div class="w-3.5 h-3.5 rounded-full bg-rose-500 border border-rose-400 shadow-sm shadow-rose-950"></div>
+          <div class="w-3.5 h-3.5 rounded-full bg-amber-400 border border-amber-300 shadow-sm shadow-amber-950"></div>
+        </div>
+
+        <!-- Lower Cake Tier -->
+        <div class="w-64 h-20 bg-gradient-to-r from-rose-950 via-rose-900 to-slate-950 rounded-2xl relative border-b border-rose-600/40 flex justify-around px-6 items-center z-5 shadow-2xl -mt-2">
+          <!-- Decorative thick drops -->
+          <div class="absolute bg-rose-800 w-4 h-6 rounded-b-full left-8 top-[18px]"></div>
+          <div class="absolute bg-amber-400/80 w-3.5 h-8 rounded-b-full left-20 top-[18px] shadow-[0_0_10px_rgba(245,158,11,0.4)]"></div>
+          <div class="absolute bg-rose-800 w-4 h-5 rounded-b-full left-36 top-[18px]"></div>
+          <div class="absolute bg-amber-400/80 w-3.5 h-7 rounded-b-full left-[180px] top-[18px] shadow-[0_0_10px_rgba(245,158,11,0.4)]"></div>
+          
+          <div class="w-4.5 h-4.5 rounded-full bg-rose-400 border border-rose-300 shadow-inner"></div>
+          <div class="w-4.5 h-4.5 rounded-full bg-amber-500 border border-amber-400 shadow-inner"></div>
+          <div class="w-4.5 h-4.5 rounded-full bg-rose-400 border border-rose-300 shadow-inner"></div>
+        </div>
+
+        <!-- Stand Base Plate -->
+        <div class="w-72 h-5 bg-gradient-to-r from-amber-600 via-amber-400 to-amber-700 rounded-full shadow-2xl z-0 -mt-1 border-t border-amber-300/40 shadow-rose-950"></div>
+      </div>
+      
+      <p class="text-rose-200/50 text-xs mt-2 font-tech uppercase tracking-widest text-center">
+        (Hover or click on flames to blow out candles)
+      </p>
+    </div>
+
+
+    <!-- STAGE 6: Interactive "Million Kisses" Flood Scene -->
+    <div id="stage-6" class="stage-container stage-hidden absolute inset-0 z-40 bg-rose-950/20 backdrop-blur-[4px] flex flex-col items-center justify-center">
+      <div class="p-8 sm:p-12 rounded-3xl glass-card text-center flex flex-col items-center max-w-md shadow-2xl mx-4 relative z-50">
+        <h2 class="text-4xl sm:text-5xl font-handwritten font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-300 via-rose-100 to-amber-200 text-center animate-bounce mb-3">
+          Sending Million Kisses! 😗💛
+        </h2>
+        <p class="text-rose-200/80 text-sm max-w-xs font-light leading-relaxed">
+          Move your cursor around or click anywhere to rain kisses across the cosmos for Riya!
+        </p>
+        <p class="text-amber-300 font-tech uppercase text-xs tracking-wider mt-4" id="kiss-counter-display">
+          Kisses Captured: 0
+        </p>
+        <button id="kisses-continue-btn" class="mt-8 px-8 py-3 rounded-full bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-bold tracking-widest text-xs uppercase shadow-lg border border-rose-400/30 transition-all duration-300 active:scale-95 cursor-pointer">
+          Receive Next surprise ✨
+        </button>
+        <div class="w-12 h-1 bg-rose-500 rounded-full mt-6 shadow-[0_0_15px_rgba(244,63,94,0.6)]"></div>
+      </div>
+      
+      <!-- Interactive Pool Container for falling kiss emojis -->
+      <div id="kisses-landing-pool" class="absolute inset-0 z-30"></div>
+    </div>
+
+
+    <!-- STAGE 7: Dynamic "I Love You in 50 Languages" Showcase -->
+    <div id="stage-7" class="stage-container stage-hidden w-full max-w-xl text-center flex flex-col items-center justify-center">
+      <div class="p-8 sm:p-12 rounded-3xl glass-card flex flex-col items-center w-full max-w-lg shadow-2xl relative border-rose-500/25">
+        <span id="language-counter-label" class="text-[10px] font-tech uppercase tracking-[0.3em] text-rose-400 mb-2">
+          Language 1 of 50
+        </span>
+        
+        <h3 id="language-name-tag" class="text-xs font-tech font-bold text-amber-300 uppercase tracking-widest bg-amber-400/10 px-5 py-2 rounded-full border border-amber-400/20 mb-8">
+          English
+        </h3>
+
+        <!-- Dynamic translation area with smooth typing crossfade -->
+        <div class="min-h-[140px] flex items-center justify-center text-center px-4">
+          <h2 id="love-message-box" class="text-3xl sm:text-4xl font-semibold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-rose-300 via-pink-400 to-amber-200 transition-all duration-300 drop-shadow-md">
+            I Love You So Much Riya 💛
+          </h2>
+        </div>
+
+        <!-- Sleek Linear Progress Bar -->
+        <div class="w-full h-[3px] bg-slate-950/80 rounded-full overflow-hidden mt-8 border border-white/5">
+          <div id="lang-progress-bar" class="h-full bg-gradient-to-r from-rose-500 via-pink-500 to-amber-400 transition-all duration-300" style="width: 2%"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- STAGE 8: Final Looping Screen with Eternal Love Letter & Memory Promises -->
+    <div id="stage-8" class="stage-container stage-hidden w-full max-w-3xl text-center flex flex-col items-center justify-center overflow-y-auto max-h-[85vh] scrollbar-hidden py-10 px-2">
+      <div class="p-8 sm:p-12 rounded-3xl glass-card flex flex-col items-center w-full shadow-2xl relative border-amber-400/15">
+        
+        <!-- Big floating golden/rose heart -->
+        <div class="mb-6 p-4.5 bg-rose-500/10 rounded-full border border-rose-500/20 float-item shadow-inner shadow-rose-950">
+          <span class="text-5xl">💛</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl font-luxury font-bold text-transparent bg-clip-text bg-gradient-to-b from-amber-200 via-amber-300 to-amber-500 mb-2 leading-relaxed tracking-wider">
+          FOREVER & ALWAYS
+        </h1>
+
+        <h2 class="text-2xl sm:text-3xl font-cursive font-bold text-rose-300 tracking-wide mb-6">
+          Happy 18th Birthday, My Shona! 🎂✨
+        </h2>
+
+        <!-- Hearts and Letter box -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-black/40 border border-rose-500/10 text-rose-100/90 text-sm sm:text-base leading-relaxed max-w-xl text-center mb-10 shadow-inner font-light">
+          <p class="mb-4 font-handwritten text-2xl text-amber-200">Dearest Shona Riya,</p>
+          <p class="mb-4">
+            "To Riya, my most favorite person in the entire universe. As you step into this beautiful new chapter of your life, I want you to know how deeply loved, valued, and cherished you are."
+          </p>
+          <p class="mb-4">
+            "Your beautiful, radiant smile has this magical power to light up my darkest days. Thank you for being my constant, my safe haven, and the most beautiful melody in my heart."
+          </p>
+          <p>
+            "May your life be filled with endless laughter, pure joy, and the kind of dreams that make you smile every single morning. I am, and will always be, right here beside you. Today, tomorrow, and for all the eternities to come."
+          </p>
+        </div>
+
+        <!-- INTERACTIVE MEMORY / PROMISE STARS WALL -->
+        <div class="w-full max-w-xl mb-10">
+          <h4 class="text-xs font-tech uppercase tracking-[0.2em] text-rose-300 mb-4 bg-rose-500/10 py-2 rounded-full inline-block px-6 border border-rose-500/20">
+            ⭐ Touch the Stars of Promise ⭐
+          </h4>
+          <div class="flex justify-center gap-4 flex-wrap mt-4">
+            <button class="promise-star-btn px-4 py-2.5 rounded-full bg-slate-900 border border-amber-500/30 text-xs font-tech hover:bg-amber-400/10 text-amber-300 transition-all duration-300 cursor-pointer" data-promise="I promise to always hold your hand tight through every single storm we meet. 💛">⭐ Storms</button>
+            <button class="promise-star-btn px-4 py-2.5 rounded-full bg-slate-900 border border-amber-500/30 text-xs font-tech hover:bg-amber-400/10 text-amber-300 transition-all duration-300 cursor-pointer" data-promise="I promise to always protect your pure, beautiful smile with everything I have. 🥺">⭐ Your Smile</button>
+            <button class="promise-star-btn px-4 py-2.5 rounded-full bg-slate-900 border border-amber-500/30 text-xs font-tech hover:bg-amber-400/10 text-amber-300 transition-all duration-300 cursor-pointer" data-promise="I promise to be your safest space, where you can be exactly who you are. ❤️">⭐ Safe Space</button>
+            <button class="promise-star-btn px-4 py-2.5 rounded-full bg-slate-900 border border-amber-500/30 text-xs font-tech hover:bg-amber-400/10 text-amber-300 transition-all duration-300 cursor-pointer" data-promise="I promise to make you laugh and smile, even when you feel like crying. 😗">⭐ Laughter</button>
+          </div>
+          <!-- Promise text display area with nice transition -->
+          <div class="h-20 flex items-center justify-center mt-6">
+            <p id="active-promise-text" class="text-amber-200/90 font-handwritten text-2xl max-w-md text-center italic transition-all duration-300 opacity-0">
+              "Click a star to reveal a lifelong promise..."
+            </p>
+          </div>
+        </div>
+
+        <!-- Elegant hand-written closing -->
+        <div class="flex flex-col items-center border-t border-rose-500/20 pt-6 w-full max-w-xs">
+          <span class="text-rose-300/40 text-[10px] font-tech uppercase tracking-[0.2em] mb-2">Made with Endless Devotion ❤️</span>
+          <span class="text-4xl font-cursive font-bold text-amber-300">Yash</span>
+          <div class="flex gap-1.5 items-center mt-3 text-[11px] font-tech text-rose-300/50">
+            <span>Forever</span>
+            <span class="text-rose-500 animate-pulse">❤️</span>
+            <span>Always</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ================= BOTTOM ROW NATURAL GARDEN SWAYS ================= -->
+  <div id="magical-garden-bottom" class="absolute bottom-0 inset-x-0 h-28 z-10 pointer-events-none flex items-end justify-between px-4 sm:px-12 overflow-hidden opacity-90">
+    <!-- Garden flowers row populated elegantly by script -->
+  </div>
+
+
+  <!-- ================= INTERACTIVE EXPERIENCE PROGRAMMING & MELODIOUS SYNTHESIZER ================= -->
+    <script>
+    // 50 languages translation dataset
+    const LOVE_LANGUAGES = [
+      { lang: "English", text: "I Love You So Much Riya 💛", color: "from-amber-400 via-orange-500 to-rose-500" },
+      { lang: "Hindi", text: "मैं तुमसे बहुत प्यार करता हूँ रिया 💛", color: "from-orange-400 via-rose-500 to-amber-500" },
+      { lang: "Marathi", text: "मी तुझ्यावर खूप प्रेम करतो रिया 💛", color: "from-rose-400 via-amber-500 to-orange-500" },
+      { lang: "French", text: "Je t'aime tellement Riya 💛", color: "from-blue-400 via-white to-rose-400" },
+      { lang: "Spanish", text: "Te amo muchísimo Riya 💛", color: "from-yellow-400 via-red-500 to-amber-500" },
+      { lang: "German", text: "Ich liebe dich so sehr Riya 💛", color: "from-red-500 via-yellow-500 to-amber-600" },
+      { lang: "Italian", text: "Ti amo così tanto Riya 💛", color: "from-green-400 via-white to-red-400" },
+      { lang: "Portuguese", text: "Eu te amo tanto Riya 💛", color: "from-green-500 via-yellow-400 to-blue-500" },
+      { lang: "Japanese", text: "りや、めちゃくちゃ愛してるよ 💛", color: "from-rose-300 via-pink-400 to-red-400" },
+      { lang: "Korean", text: "리아야, 진짜 너무 사랑해 💛", color: "from-blue-400 via-rose-400 to-white" },
+      { lang: "Chinese", text: "莉亚，我好爱你 💛", color: "from-red-500 via-amber-400 to-yellow-500" },
+      { lang: "Arabic", text: "أحبك كثيراً يا ريا 💛", color: "from-emerald-400 via-teal-500 to-amber-500" },
+      { lang: "Russian", text: "Я так сильно люблю тебя, Рия 💛", color: "from-blue-500 via-white to-red-500" },
+      { lang: "Turkish", text: "Seni çok seviyorum Riya 💛", color: "from-red-500 via-rose-400 to-white" },
+      { lang: "Bengali", text: "আমি তোমাকে অনেক ভালোবাসি রিয়া 💛", color: "from-emerald-500 via-yellow-500 to-rose-500" },
+      { lang: "Punjabi", text: "ਮੈਂ ਤੈਨੂੰ ਬਹੁਤ ਪਿਆਰ ਕਰਦਾ ਹਾਂ ਰੀਆ 💛", color: "from-yellow-500 via-orange-500 to-red-500" },
+      { lang: "Gujarati", text: "હું તને બહુ પ્રેમ કરું છું રિયા 💛", color: "from-orange-400 via-amber-400 to-rose-400" },
+      { lang: "Tamil", text: "நான் உன்னை மிகவும் காதலிக்கிறேன் ரியா 💛", color: "from-amber-500 via-orange-600 to-red-500" },
+      { lang: "Telugu", text: "నేను నిన్ను చాలా ప్రేమిస్తున్నాను రియా 💛", color: "from-yellow-400 via-red-400 to-orange-500" },
+      { lang: "Kannada", text: "ನಾನು ನಿನ್ನನ್ನು ತುಂಬಾ ಪ್ರೀತಿಸುತ್ತೇನೆ ರಿಯಾ 💛", color: "from-amber-500 via-red-500 to-orange-400" },
+      { lang: "Malayalam", text: "ഞാൻ നിന്നെ ഒത്തിരി സ്നേഹിക്കുന്നു റിയ 💛", color: "from-teal-400 via-emerald-500 to-amber-500" },
+      { lang: "Urdu", text: "ریا، میں تم سے بے پناہ محبت کرتا ہوں 💛", color: "from-emerald-600 via-stone-400 to-amber-500" },
+      { lang: "Nepali", text: "म तिमीलाई धेरै माया गर्छु रिया 💛", color: "from-red-500 via-blue-500 to-white" },
+      { lang: "Sinhala", text: "මම ඔයාට ගොඩක් ආදරෙයි රියා 💛", color: "from-amber-400 via-orange-500 to-red-600" },
+      { lang: "Thai", text: "ฉันรักคุณมากนะริยา 💛", color: "from-blue-500 via-white to-red-500" },
+      { lang: "Vietnamese", text: "Anh yêu em rất nhiều, Riya 💛", color: "from-red-500 via-yellow-400 to-amber-500" },
+      { lang: "Indonesian", text: "Aku sangat mencintaimu Riya 💛", color: "from-red-500 via-white to-rose-400" },
+      { lang: "Malay", text: "Saya sangat cintakanmu Riya 💛", color: "from-yellow-400 via-blue-500 to-red-500" },
+      { lang: "Dutch", text: "Ik hou zoveel van je, Riya 💛", color: "from-orange-500 via-white to-blue-500" },
+      { lang: "Swedish", text: "Jag älskar dig så mycket, Riya 💛", color: "from-blue-400 via-yellow-400 to-amber-500" },
+      { lang: "Norwegian", text: "Jeg elsker deg så mye, Riya 💛", color: "from-red-500 via-blue-600 to-white" },
+      { lang: "Danish", text: "Jeg elsker dig så højt, Riya 💛", color: "from-red-500 via-rose-300 to-white" },
+      { lang: "Finnish", text: "Rakastan sinua niin paljon, Riya 💛", color: "from-blue-500 via-slate-200 to-blue-600" },
+      { lang: "Polish", text: "Tak bardzo cię kocham, Riya 💛", color: "from-red-500 via-slate-100 to-rose-400" },
+      { lang: "Czech", text: "Moc tě miluji, Riyo 💛", color: "from-blue-500 via-red-500 to-white" },
+      { lang: "Slovak", text: "Veľmi ťa milujem, Riya 💛", color: "from-blue-500 via-red-500 to-white" },
+      { lang: "Hungarian", text: "Nagyon szeretlek, Riya 💛", color: "from-emerald-600 via-white to-red-500" },
+      { lang: "Romanian", text: "Te iubesc atât de mult, Riya 💛", color: "from-blue-600 via-yellow-400 to-red-600" },
+      { lang: "Greek", text: "Σ' αγαπώ τόσο πολύ Ρίγια 💛", color: "from-blue-400 via-sky-300 to-white" },
+      { lang: "Hebrew", text: "אני כל так אוהב אותך ריה 💛", color: "from-blue-500 via-slate-100 to-blue-400" },
+      { lang: "Persian", text: "ریا، من خیلی دوستت دارم 💛", color: "from-emerald-500 via-white to-red-500" },
+      { lang: "Ukrainian", text: "Я так сильно кохаю тебе, Ріє 💛", color: "from-blue-400 via-yellow-400 to-amber-500" },
+      { lang: "Serbian", text: "Толико те волим, Рија 💛", color: "from-red-500 via-blue-500 to-white" },
+      { lang: "Croatian", text: "Toliko te volim, Rija 💛", color: "from-red-500 via-blue-500 to-white" },
+      { lang: "Bulgarian", text: "Обичам те толкова много, Рия 💛", color: "from-emerald-500 via-green-600 to-red-500" },
+      { lang: "Lithuanian", text: "Aš tave taip stipriai myliu, Rija 💛", color: "from-yellow-400 via-green-500 to-red-500" },
+      { lang: "Latvian", text: "Es tevi tik ļoti mīlu, Rija 💛", color: "from-red-700 via-slate-100 to-red-800" },
+      { lang: "Estonian", text: "Ma armastan sind nii väga, Riya 💛", color: "from-blue-500 via-black to-slate-200" },
+      { lang: "Irish", text: "Tá an-ghrá agam duit, Riya 💛", color: "from-green-500 via-white to-orange-500" },
+      { lang: "Welsh", text: "Rwy'n dy garu di gymaint, Riya 💛", color: "from-red-500 via-green-600 to-white" }
+    ];
+
+   const GALLERY_IMAGES = [
+      { url: "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?q=80&w=400&auto=format&fit=crop", caption: "Your Smile 🌻" },
+      { url: "https://images.unsplash.com/photo-1479090793912-eb9929f4fdb2?q=80&w=968&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=400&auto=format&fit=crop", caption: "Your Eyes " },
+      { url: "https://images.unsplash.com/photo-1581938165093-050aeb5ef218?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=400&auto=format&fit=crop", caption: "Your lips 🫦" },
+      { url: "https://images.unsplash.com/photo-1620065692460-d8e110a47ffb?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=400&auto=format&fit=crop", caption: "Your Waist 😋" },
+      { url: "https://images.unsplash.com/photo-1536746803623-cef87080bfc8?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=400&auto=format&fit=crop", caption: "Your Hairs 💛" },
+      { url: "https://images.unsplash.com/photo-1648213649604-2a079932a773?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=400&auto=format&fit=crop", caption: "boobs 🙂(dudu 🙈)" }
+    ];
+
+    // ================= WEB AUDIO API SYMPHONIC SYNTHESIZER =================
+    // Implements highly emotional piano chord progressions and melodies procedurally
+    class CinematicMelodySynth {
+      constructor() {
+        this.ctx = null;
+        this.isPlaying = false;
+        this.tempo = 80;
+        this.beatTimer = null;
+        this.chordIndex = 0;
+        this.step = 0;
+        
+        // Highly romantic progressions (Am9 -> Fmaj9 -> Cmaj9 -> G6/B)
+        this.chords = [
+          [45, 57, 60, 64, 67], // Am9
+          [41, 53, 57, 60, 64], // Fmaj9
+          [48, 60, 64, 67, 71], // Cmaj9
+          [47, 59, 62, 67, 71]  // G6/B
+        ];
+        
+        // Emotional arpeggio sequence notes (relative to root)
+        this.arpeggios = [0, 2, 3, 4, 1, 3, 2, 4];
+      }
+
+      start() {
+        if (this.isPlaying) return;
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        this.ctx = new AudioCtx();
+        this.isPlaying = true;
+        this.playPulse();
+      }
+
+      stop() {
+        this.isPlaying = false;
+        if (this.beatTimer) clearTimeout(this.beatTimer);
+        if (this.ctx) {
+          this.ctx.close();
+          this.ctx = null;
+        }
+      }
+
+      mToF(m) {
+        return 440 * Math.pow(2, (m - 69) / 12);
+      }
+
+      // Generate lush rich soft piano sounds
+      synthPianoNote(m, startTime, duration, vol = 0.25) {
+        if (!this.ctx || !this.isPlaying) return;
+
+        const osc1 = this.ctx.createOscillator();
+        const osc2 = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        const filter = this.ctx.createBiquadFilter();
+
+        osc1.type = "sine";
+        osc1.frequency.setValueAtTime(this.mToF(m), startTime);
+        
+        // Add subtle detuning for rich chorus-like warmth
+        osc2.type = "triangle";
+        osc2.frequency.setValueAtTime(this.mToF(m) + (Math.random() - 0.5) * 1.5, startTime);
+
+        // Low pass filter to make the tone extremely warm, velvet, and gentle
+        filter.type = "lowpass";
+        filter.frequency.setValueAtTime(800, startTime);
+        filter.frequency.exponentialRampToValueAtTime(300, startTime + duration);
+
+        // Elegant physical envelope structure (Quick attack, slow decay)
+        gain.gain.setValueAtTime(0, startTime);
+        gain.gain.linearRampToValueAtTime(vol, startTime + 0.05);
+        gain.gain.exponentialRampToValueAtTime(0.001, startTime + duration);
+
+        osc1.connect(filter);
+        osc2.connect(filter);
+        filter.connect(gain);
+        gain.connect(this.ctx.destination);
+
+        osc1.start(startTime);
+        osc2.start(startTime);
+        osc1.stop(startTime + duration);
+        osc2.stop(startTime + duration);
+      }
+
+      playPulse() {
+        if (!this.isPlaying || !this.ctx) return;
+
+        const time = this.ctx.currentTime;
+        const chord = this.chords[this.chordIndex];
+
+        // 1. Root bass note
+        if (this.step === 0) {
+          this.synthPianoNote(chord[0] - 12, time, 4.0, 0.4);
+          this.synthPianoNote(chord[1], time, 3.5, 0.2);
+        }
+
+        // 2. Play arpeggios
+        const arpIndex = this.step % this.arpeggios.length;
+        const chordOffset = chord[2 + (arpIndex % 3)];
+        
+        // Play soft floating melody note
+        const melodyNote = chordOffset + (arpIndex >= 4 ? 12 : 0);
+        this.synthPianoNote(melodyNote, time, 1.8, 0.15);
+
+        // Advance sequence
+        this.step++;
+        if (this.step % 8 === 0) {
+          this.chordIndex = (this.chordIndex + 1) % this.chords.length;
+          this.step = 0;
+        }
+
+        this.beatTimer = setTimeout(() => this.playPulse(), 550);
+      }
+    }
+
+    const synth = new CinematicMelodySynth();
+    let isMusicPlaying = false;
+
+    // Toggle Music Functions
+    const musicToggleBtn = document.getElementById("music-toggle");
+    const musicEqualizer = document.getElementById("music-equalizer");
+    const musicIcon = document.getElementById("music-icon");
+
+    function toggleMusicState(forceOn = null) {
+      if (forceOn !== null) {
+        isMusicPlaying = forceOn;
+      } else {
+        isMusicPlaying = !isMusicPlaying;
+      }
+
+      if (isMusicPlaying) {
+        synth.start();
+        musicToggleBtn.classList.add("bg-rose-500/30", "text-rose-100");
+        musicToggleBtn.style.boxShadow = "0 0 25px rgba(244, 63, 94, 0.4)";
+        musicEqualizer.classList.remove("hidden");
+        musicIcon.textContent = "🔊";
+      } else {
+        synth.stop();
+        musicToggleBtn.classList.remove("bg-rose-500/30", "text-rose-100");
+        musicToggleBtn.style.boxShadow = "none";
+        musicEqualizer.classList.add("hidden");
+        musicIcon.textContent = "🎵";
+      }
+    }
+
+    musicToggleBtn.addEventListener("click", () => toggleMusicState());
+
+
+    // ================= HIGH-PERFORMANCE CANVAS PARTICLE SYSTEM =================
+    // Synthesizes floating hearts, sakura petals, and golden stardust in real-time
+    const canvas = document.getElementById("canvas-particles");
+    const ctx = canvas.getContext("2d");
+
+    let particles = [];
+    let scaleRatio = window.devicePixelRatio || 1;
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth * scaleRatio;
+      canvas.height = window.innerHeight * scaleRatio;
+      canvas.style.width = `${window.innerWidth}px`;
+      canvas.style.height = `${window.innerHeight}px`;
+      ctx.scale(scaleRatio, scaleRatio);
+    }
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+
+    class Particle {
+      constructor(type) {
+        this.type = type; // 'heart', 'petal', 'star', 'confetti'
+        this.reset(true);
+      }
+
+      reset(init = false) {
+        this.x = Math.random() * window.innerWidth;
+        this.y = init ? Math.random() * window.innerHeight : -20;
+        this.size = 6 + Math.random() * 12;
+        this.speedX = (Math.random() - 0.5) * 1.5;
+        this.speedY = 1 + Math.random() * 2;
+        this.opacity = 0.2 + Math.random() * 0.6;
+        this.rot = Math.random() * Math.PI * 2;
+        this.rotSpeed = (Math.random() - 0.5) * 0.05;
+        
+        if (this.type === 'heart') {
+          this.speedY = 0.5 + Math.random() * 1.0;
+          this.color = Math.random() > 0.4 ? 'rgba(244, 63, 94,' : 'rgba(245, 158, 11,';
+          this.y = init ? Math.random() * window.innerHeight : window.innerHeight + 20;
+        } else if (this.type === 'petal') {
+          this.speedY = 0.8 + Math.random() * 1.5;
+          this.speedX = 0.5 + Math.random() * 1.2;
+          this.color = 'rgba(251, 113, 133,';
+        } else if (this.type === 'star') {
+          this.speedY = 0.2 + Math.random() * 0.4;
+          this.color = 'rgba(253, 224, 71,';
+        } else if (this.type === 'confetti') {
+          this.size = 5 + Math.random() * 6;
+          this.speedY = 2 + Math.random() * 3;
+          this.speedX = (Math.random() - 0.5) * 4;
+          const colors = ['#f43f5e', '#3b82f6', '#10b981', '#f59e0b', '#ec4899', '#ffffff'];
+          this.colorHex = colors[Math.floor(Math.random() * colors.length)];
+        }
+      }
+
+      update() {
+        if (this.type === 'heart') {
+          this.y -= this.speedY;
+          this.x += Math.sin(this.y * 0.01) * 0.5;
+          if (this.y < -20) this.reset();
+        } else if (this.type === 'petal') {
+          this.y += this.speedY;
+          this.x += Math.sin(this.y * 0.02) * 1.0;
+          this.rot += this.rotSpeed;
+          if (this.y > window.innerHeight + 20 || this.x > window.innerWidth + 20) this.reset();
+        } else if (this.type === 'star') {
+          this.y += this.speedY;
+          this.opacity = 0.2 + Math.abs(Math.sin(Date.now() * 0.002 + this.x)) * 0.6;
+          if (this.y > window.innerHeight + 20) this.reset();
+        } else if (this.type === 'confetti') {
+          this.y += this.speedY;
+          this.x += this.speedX;
+          this.rot += this.rotSpeed * 2;
+          if (this.y > window.innerHeight + 20) {
+            this.opacity = 0;
+          }
+        }
+      }
+
+      draw() {
+        if (this.opacity <= 0) return;
+        ctx.save();
+        ctx.globalAlpha = this.opacity;
+        ctx.translate(this.x, this.y);
+        ctx.rotate(this.rot);
+
+        if (this.type === 'heart') {
+          ctx.fillStyle = this.color + this.opacity + ')';
+          ctx.beginPath();
+          ctx.moveTo(0, 0);
+          ctx.bezierCurveTo(-this.size/2, -this.size/2, -this.size, this.size/3, 0, this.size);
+          ctx.bezierCurveTo(this.size, this.size/3, this.size/2, -this.size/2, 0, 0);
+          ctx.fill();
+        } else if (this.type === 'petal') {
+          ctx.fillStyle = this.color + this.opacity + ')';
+          ctx.beginPath();
+          ctx.ellipse(0, 0, this.size * 0.7, this.size * 1.2, Math.PI / 4, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.strokeStyle = 'rgba(255, 255, 255, 0.15)';
+          ctx.beginPath();
+          ctx.moveTo(0, -this.size);
+          ctx.lineTo(0, this.size);
+          ctx.stroke();
+        } else if (this.type === 'star') {
+          ctx.fillStyle = this.color + this.opacity + ')';
+          ctx.shadowBlur = 10;
+          ctx.shadowColor = 'rgba(253, 224, 71, 0.8)';
+          ctx.beginPath();
+          for (let i = 0; i < 5; i++) {
+            ctx.lineTo(Math.cos((18 + i * 72) * Math.PI / 180) * this.size * 0.5,
+                       Math.sin((18 + i * 72) * Math.PI / 180) * this.size * 0.5);
+            ctx.lineTo(Math.cos((54 + i * 72) * Math.PI / 180) * this.size * 0.2,
+                       Math.sin((54 + i * 72) * Math.PI / 180) * this.size * 0.2);
+          }
+          ctx.closePath();
+          ctx.fill();
+        } else if (this.type === 'confetti') {
+          ctx.fillStyle = this.colorHex;
+          ctx.fillRect(-this.size / 2, -this.size / 2, this.size, this.size * 0.6);
+        }
+
+        ctx.restore();
+      }
+    }
+
+    function setupParticleSystem() {
+      for (let i = 0; i < 20; i++) particles.push(new Particle('heart'));
+      for (let i = 0; i < 30; i++) particles.push(new Particle('petal'));
+      for (let i = 0; i < 25; i++) particles.push(new Particle('star'));
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      requestAnimationFrame(animateParticles);
+    }
+
+    setupParticleSystem();
+    animateParticles();
+
+    function triggerConfettiBurst(count = 100) {
+      for (let i = 0; i < count; i++) {
+        const p = new Particle('confetti');
+        p.x = Math.random() * window.innerWidth;
+        p.y = -50 - Math.random() * 200;
+        particles.push(p);
+      }
+    }
+
+
+    // ================= STAGED STARISE TIMELINE MANAGER =================
+    const stages = [
+      document.getElementById("stage-0"),
+      document.getElementById("stage-1"),
+      document.getElementById("stage-2"),
+      document.getElementById("stage-3"),
+      document.getElementById("stage-4"),
+      document.getElementById("stage-5"),
+      document.getElementById("stage-6"),
+      document.getElementById("stage-7"),
+      document.getElementById("stage-8")
+    ];
+
+    function navigateToStage(stageNum) {
+      stages.forEach((el, index) => {
+        if (index === stageNum) {
+          el.classList.remove("stage-hidden");
+          el.classList.add("stage-active");
+        } else {
+          el.classList.add("stage-hidden");
+          el.classList.remove("stage-active");
+        }
+      });
+    }
+
+
+    // ================= STAGE-BASED INTERACTIVE SEQUENCERS =================
+
+    // --- STAGE 0: Opening Heart lock gateway click ---
+    const openSurpriseBtn = document.getElementById("open-surprise-btn");
+    openSurpriseBtn.addEventListener("click", () => {
+      toggleMusicState(true);
+      navigateToStage(1);
+      loadModernGallery();
+    });
+
+
+    // --- STAGE 1: Bento Style Romantic Gallery Loading ---
+    const galleryGrid = document.getElementById("gallery-grid");
+    const galleryContinueBtn = document.getElementById("gallery-continue-btn");
+
+    function loadModernGallery() {
+      galleryGrid.innerHTML = "";
+      GALLERY_IMAGES.forEach((img, idx) => {
+        const card = document.createElement("div");
+        
+        let bentoClass = "relative rounded-3xl overflow-hidden aspect-square shadow-xl border border-rose-500/15 group opacity-0 transform scale-90";
+        if (idx === 0) bentoClass += " md:col-span-2 md:aspect-auto md:h-52";
+        if (idx === 4) bentoClass += " md:row-span-2 md:aspect-auto md:h-full";
+        
+        card.className = bentoClass;
+        card.style.transition = "opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)";
+        card.style.transitionDelay = `${idx * 0.12}s`;
+        
+        card.innerHTML = `
+          <img src="${img.url}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s] pointer-events-none" referrerPolicy="no-referrer">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-white text-xs font-handwritten text-lg text-amber-200 drop-shadow-md">${img.caption}</span>
+          </div>
+        `;
+        
+        galleryGrid.appendChild(card);
+        
+        setTimeout(() => {
+          card.classList.remove("opacity-0", "scale-90");
+          card.classList.add("opacity-100", "scale-100");
+        }, 100);
+      });
+
+      setTimeout(() => {
+        galleryContinueBtn.classList.remove("opacity-0", "pointer-events-none");
+        galleryContinueBtn.classList.add("opacity-100", "pointer-events-auto");
+      }, 1500);
+    }
+
+    galleryContinueBtn.addEventListener("click", () => {
+      navigateToStage(2);
+    });
+
+
+    // --- STAGE 2: Deep Crimson Heartbeat & Birthday Reveal ---
+    const pulsingHeartTouch = document.getElementById("pulsing-heart-touch");
+    const revealBirthdayText = document.getElementById("reveal-birthday-text");
+    const pulseInstruction = document.getElementById("pulse-instruction");
+    let isBirthdayRevealed = false;
+
+    pulsingHeartTouch.addEventListener("click", () => {
+      if (isBirthdayRevealed) return;
+      isBirthdayRevealed = true;
+      pulseInstruction.classList.add("opacity-0");
+      
+      // Play a high note chime synth
+      if (synth.ctx && synth.isPlaying) {
+        synth.synthPianoNote(79, synth.ctx.currentTime, 1.5, 0.5);
+        synth.synthPianoNote(83, synth.ctx.currentTime + 0.1, 1.5, 0.4);
+        synth.synthPianoNote(88, synth.ctx.currentTime + 0.25, 2.5, 0.6);
+      }
+
+      // Staggered Sparkly Entrance for Birthday Wishes
+      const bdayWishes = "HAPPY 18TH BIRTHDAY, RIYA! 🎂✨";
+      revealBirthdayText.innerHTML = "";
+      
+      [...bdayWishes].forEach((char, i) => {
+        const span = document.createElement("span");
+        span.className = "letter-sparkle";
+        span.style.animationDelay = `${i * 0.08}s`;
+        span.textContent = char === " " ? "\u00A0" : char;
+        revealBirthdayText.appendChild(span);
+      });
+
+      triggerConfettiBurst(80);
+
+      setTimeout(() => {
+        navigateToStage(3);
+      }, 5000);
+    });
+
+
+    // --- STAGE 3: "Mera Bachha Bada Ho Gaya" Cute Interlude ---
+    const bachhaContinueBtn = document.getElementById("bachha-continue-btn");
+    bachhaContinueBtn.addEventListener("click", () => {
+      navigateToStage(4);
+      startDialogueTimer();
+    });
+
+
+    // --- STAGE 4: Immersive Scripted Dialogue Series ---
+    const DIALOGUE_LINES = [
+      "Areee aap toh 18 yrs ke ho gaye 🤭",
+      "Mera chand toh aur bhi bright ho gaya 😘",
+      "Waise legally adult ho gaye ho, but mere liye hamesha baby hi rahoge 🥺",
+      "Chalo, deep breath in and close your eyes, the sweet candle wishes await you... 🌸"
+    ];
+    let currentDialogueIndex = 0;
+    const dialogueDisplayText = document.getElementById("dialogue-display-text");
+    const dialoguePrevBtn = document.getElementById("dialogue-prev-btn");
+    const dialogueNextBtn = document.getElementById("dialogue-next-btn");
+
+    function renderDialogue() {
+      dialogueDisplayText.style.opacity = 0;
+      dialogueDisplayText.style.transform = "translateY(10px) scale(0.98)";
+      
+      setTimeout(() => {
+        dialogueDisplayText.textContent = DIALOGUE_LINES[currentDialogueIndex];
+        dialogueDisplayText.style.opacity = 1;
+        dialogueDisplayText.style.transform = "translateY(0) scale(1)";
+      }, 350);
+
+      // Handle disable states
+      dialoguePrevBtn.disabled = currentDialogueIndex === 0;
+    }
+
+    dialogueNextBtn.addEventListener("click", () => {
+      if (currentDialogueIndex < DIALOGUE_LINES.length - 1) {
+        currentDialogueIndex++;
+        renderDialogue();
+      } else {
+        navigateToStage(5);
+        setupBirthdayCake();
+      }
+    });
+
+    dialoguePrevBtn.addEventListener("click", () => {
+      if (currentDialogueIndex > 0) {
+        currentDialogueIndex--;
+        renderDialogue();
+      }
+    });
+
+    function startDialogueTimer() {
+      currentDialogueIndex = 0;
+      renderDialogue();
+    }
+
+
+    // --- STAGE 5: Interactive 18 Candles Cake Blowing Ceremony ---
+    const candlesContainer = document.getElementById("candles-container");
+    const cakeInstructionBanner = document.getElementById("cake-instruction-banner");
+    let blownCandlesCount = 0;
+
+    function setupBirthdayCake() {
+      candlesContainer.innerHTML = "";
+      blownCandlesCount = 0;
+      
+      // Position 18 detailed candles beautifully
+      for (let i = 0; i < 18; i++) {
+        const candle = document.createElement("div");
+        candle.className = "relative w-4 flex flex-col items-center h-20 transition-all duration-500 hover:scale-110";
+        candle.style.animation = `floatUp 4s infinite ease-in-out`;
+        candle.style.animationDelay = `${i * 0.15}s`;
+        
+        candle.innerHTML = `
+          <!-- Flame -->
+          <div class="absolute -top-4 w-3.5 h-6 bg-gradient-to-b from-amber-200 via-orange-400 to-red-500 rounded-full flame-flickering opacity-100 cursor-pointer shadow-[0_0_15px_rgba(245,158,11,0.8)] filter transition-all duration-300" id="flame-${i}"></div>
+          
+          <!-- Wick -->
+          <div class="w-[2px] h-2 bg-slate-800 rounded-full"></div>
+          
+          <!-- Wax Body -->
+          <div class="w-2 h-14 bg-gradient-to-r ${i % 2 === 0 ? 'from-rose-400 to-pink-500' : 'from-yellow-400 to-amber-500'} rounded-t-sm shadow-md border-b-2 border-rose-950"></div>
+        `;
+        
+        candlesContainer.appendChild(candle);
+        
+        const flame = candle.querySelector(`#flame-${i}`);
+        
+        // Extinguish Event (Hover or Click)
+        const extinguishFlame = () => {
+          if (flame.classList.contains("opacity-0")) return;
+          flame.classList.remove("opacity-100", "flame-flickering");
+          flame.classList.add("opacity-0", "pointer-events-none");
+          flame.style.filter = "none";
+          flame.style.boxShadow = "none";
+          
+          // Play extinguishing puff noise
+          if (synth.ctx && synth.isPlaying) {
+            synth.synthPianoNote(100 - i, synth.ctx.currentTime, 0.4, 0.1);
+          }
+
+          blownCandlesCount++;
+          
+          // Visual updates
+          if (blownCandlesCount === 18) {
+            triggerMassiveCakeCelebration();
+          } else {
+            cakeInstructionBanner.textContent = `Blowing out candles: ${blownCandlesCount} / 18 blown! 😗💨`;
+          }
+        };
+
+        flame.addEventListener("mouseenter", extinguishFlame);
+        flame.addEventListener("click", extinguishFlame);
+      }
+    }
+
+    function triggerMassiveCakeCelebration() {
+      cakeInstructionBanner.textContent = "Yayyy! Make a beautiful wish My Shona! 🎂✨💛";
+      cakeInstructionBanner.classList.add("text-amber-300", "animate-bounce");
+      
+      triggerConfettiBurst(150);
+      
+      // Joyous high scale piano melodies
+      if (synth.ctx && synth.isPlaying) {
+        const now = synth.ctx.currentTime;
+        [72, 74, 76, 77, 79, 81, 83, 84].forEach((note, idx) => {
+          synth.synthPianoNote(note, now + idx * 0.15, 0.6, 0.4);
+        });
+      }
+
+      setTimeout(() => {
+        navigateToStage(6);
+        setupMillionKissesPool();
+      }, 4000);
+    }
+
+
+    // --- STAGE 6: "Million Kisses" Interactive Flood ---
+    const kissesLandingPool = document.getElementById("kisses-landing-pool");
+    const kissesContinueBtn = document.getElementById("kisses-continue-btn");
+    const kissCounterDisplay = document.getElementById("kiss-counter-display");
+    let totalKissesCount = 0;
+    let kissSpawnActive = false;
+
+    function setupMillionKissesPool() {
+      totalKissesCount = 0;
+      kissCounterDisplay.textContent = "Kisses Captured: 0";
+      kissSpawnActive = true;
+      kissesLandingPool.innerHTML = "";
+    }
+
+    function spawnKissEmoji(x, y) {
+      if (!kissSpawnActive) return;
+      const kiss = document.createElement("span");
+      kiss.className = "kiss-floater text-5xl";
+      kiss.textContent = Math.random() > 0.5 ? "💋" : "😗";
+      
+      // Random coordinates offset
+      const randX = (Math.random() - 0.5) * 350;
+      const randY = -150 - Math.random() * 250;
+      const randRot = (Math.random() - 0.5) * 90;
+      
+      kiss.style.setProperty("--x", `${randX}px`);
+      kiss.style.setProperty("--y", `${randY}px`);
+      kiss.style.setProperty("--r", `${randRot}deg`);
+      kiss.style.left = `${x}px`;
+      kiss.style.top = `${y}px`;
+      
+      kissesLandingPool.appendChild(kiss);
+      
+      totalKissesCount++;
+      kissCounterDisplay.textContent = `Kisses Captured: ${totalKissesCount}`;
+      
+      // Clean up after anim
+      setTimeout(() => {
+        kiss.remove();
+      }, 2500);
+    }
+
+    // Capture screen clicks/touches and mouse moves
+    window.addEventListener("mousemove", (e) => {
+      if (!kissSpawnActive) return;
+      // throttle random spawn
+      if (Math.random() > 0.85) {
+        spawnKissEmoji(e.clientX, e.clientY);
+      }
+    });
+
+    window.addEventListener("click", (e) => {
+      if (!kissSpawnActive) return;
+      // click spawns a burst
+      for(let i=0; i<3; i++) {
+        spawnKissEmoji(e.clientX + (Math.random()-0.5)*40, e.clientY + (Math.random()-0.5)*40);
+      }
+    });
+
+    kissesContinueBtn.addEventListener("click", () => {
+      kissSpawnActive = false;
+      navigateToStage(7);
+      startLanguagesShowcase();
+    });
+
+
+    // --- STAGE 7: "I Love You in 50 Languages" Rotating Showcase ---
+    let langIndex = 0;
+    let langTimer = null;
+    const loveMessageBox = document.getElementById("love-message-box");
+    const languageCounterLabel = document.getElementById("language-counter-label");
+    const languageNameTag = document.getElementById("language-name-tag");
+    const langProgressBar = document.getElementById("lang-progress-bar");
+
+    function startLanguagesShowcase() {
+      langIndex = 0;
+      rotateLanguage();
+    }
+
+    function rotateLanguage() {
+      if (langIndex >= LOVE_LANGUAGES.length) {
+        // Complete languages and go to final stage
+        langProgressBar.style.width = "100%";
+        setTimeout(() => {
+          navigateToStage(8);
+          setupStarsOfPromise();
+        }, 1000);
+        return;
+      }
+
+      const item = LOVE_LANGUAGES[langIndex];
+      
+      // Update label and progress
+      languageCounterLabel.textContent = `Language ${langIndex + 1} of 50`;
+      languageNameTag.textContent = item.lang;
+      
+      const percent = ((langIndex + 1) / LOVE_LANGUAGES.length) * 100;
+      langProgressBar.style.width = `${percent}%`;
+
+      // Update text with romantic gradient styling
+      loveMessageBox.className = `text-3xl sm:text-4xl font-semibold tracking-wide text-transparent bg-clip-text bg-gradient-to-r ${item.color} transition-all duration-300 drop-shadow-md opacity-0`;
+      
+      setTimeout(() => {
+        loveMessageBox.textContent = item.text;
+        loveMessageBox.classList.remove("opacity-0");
+        loveMessageBox.classList.add("opacity-100");
+      }, 100);
+
+      langIndex++;
+      
+      // Delay speed (faster rotating 150ms for hyper-fluid presentation, or 250ms for gorgeous focus)
+      langTimer = setTimeout(rotateLanguage, 280);
+    }
+
+
+    // --- STAGE 8: Final Parchment, Letter & "Stars of Promise" ---
+    const promiseStarBtns = document.querySelectorAll(".promise-star-btn");
+    const activePromiseText = document.getElementById("active-promise-text");
+
+    function setupStarsOfPromise() {
+      promiseStarBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const promiseVal = btn.getAttribute("data-promise");
+          
+          activePromiseText.style.opacity = 0;
+          setTimeout(() => {
+            activePromiseText.textContent = promiseVal;
+            activePromiseText.style.opacity = 1;
+            activePromiseText.classList.remove("text-rose-300", "text-amber-200");
+            activePromiseText.classList.add("text-amber-200");
+          }, 250);
+
+          // Star trigger burst
+          triggerConfettiBurst(20);
+        });
+      });
+    }
+
+
+    // ================= BOTTOM NATURISTIC SWAYING GARDEN =================
+    const gardenBottom = document.getElementById("magical-garden-bottom");
+
+    function generateMagicalGarden() {
+      gardenBottom.innerHTML = "";
+      const plantEmojis = ["🌾", "🌿", "🌸", "🌺", "🌼", "🌷", "🌱", "🌾", "🍀", "🌻"];
+      const count = window.innerWidth < 640 ? 12 : 24;
+      
+      for (let i = 0; i < count; i++) {
+        const plant = document.createElement("div");
+        const emoji = plantEmojis[Math.floor(Math.random() * plantEmojis.length)];
+        const scale = 0.8 + Math.random() * 0.8;
+        const speed = 4 + Math.random() * 4;
+        
+        plant.className = "sway-slow flex items-end justify-center pointer-events-auto cursor-pointer hover:scale-125 transition-transform duration-300";
+        plant.style.fontSize = `${24 * scale}px`;
+        plant.style.animationDuration = `${speed}s`;
+        plant.style.animationDelay = `${i * -0.2}s`;
+        plant.textContent = emoji;
+        
+        plant.addEventListener("mouseenter", () => {
+          triggerConfettiBurst(3);
+        });
+
+        gardenBottom.appendChild(plant);
+      }
+    }
+    generateMagicalGarden();
+    window.addEventListener("resize", generateMagicalGarden);
+
+  </script>
+</body>
+</html>
